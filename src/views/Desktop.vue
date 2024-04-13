@@ -7,7 +7,9 @@
       <VueFlow :nodes="nodes" fit-view-on-init>
         <template #node-resizable="resizableNodeProps">
           <ResizableNode :label="resizableNodeProps.label" :minHeight="100" :minWidth="300"/>
-          <button type="button" @click="removeNode(resizableNodeProps.id)">Remove a node</button>
+          <button type="button" @click="removeNode(resizableNodeProps.id)" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Remove a node
+          </button>
         </template>
       </VueFlow>
     </div>
